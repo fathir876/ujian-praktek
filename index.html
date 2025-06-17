@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timeless Photography & Cinematics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Crimson+Text&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Crimson Text', serif;
+      background-color: #1a1a1a;
+      color: #f5f5f5;
+      line-height: 1.7;
+    }
+
+    header {
+      background-image: url('https://images.unsplash.com/photo-1526506118081-bdc5c203d123');
+      background-size: cover;
+      background-position: center;
+      padding: 120px 20px;
+      text-align: center;
+      color: #f5f5f5;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5em;
+      margin-bottom: 20px;
+    }
+
+    header p {
+      font-size: 1.3em;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    nav {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav a {
+      color: #e0c97f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.7em;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #e0c97f;
+    }
+
+    .column {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .column .box {
+      flex: 1 1 300px;
+      background-color: #2b2b2b;
+      padding: 25px;
+      border-left: 5px solid #e0c97f;
+      border-radius: 8px;
+    }
+
+    .box h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6em;
+      margin-bottom: 10px;
+      color: #f7e4b6;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      filter: grayscale(60%) contrast(90%);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    .features {
+      background-color: #222;
+      padding: 60px 20px;
+    }
+
+    .features ul {
+      max-width: 800px;
+      margin: auto;
+      list-style-type: square;
+      color: #e0c97f;
+      padding-left: 20px;
+    }
+
+    .features li {
+      margin-bottom: 15px;
+      font-size: 1.1em;
+    }
+
+    .cta {
+      background: url('https://images.unsplash.com/photo-1585927031544-1aa30b5e106b') center/cover no-repeat;
+      background-attachment: fixed;
+    }
+
+    .cta .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 2.8em;
+      margin-bottom: 20px;
+      color: #e0c97f;
+    }
+
+    .cta p {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+
+    .cta button {
+      padding: 18px 36px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 6px;
+      background-color: #e0c97f;
+      color: #1a1a1a;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .cta button:hover {
+      background-color: #d4b55a;
+    }
+
+    footer {
+      background-color: #111;
+      color: #999;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2em;
+      }
+
+      .section-title {
+        font-size: 2em;
+      }
+
+      .cta h2 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="#philosophy">Philosophy</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#features">Features</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Timeless Photography & Cinematics</h1>
+    <p>Immortalizing every emotion, every detail, in the most breathtaking way possible — where world-class photography meets high-end cinematic visuals with soul.</p>
+  </header>
+
+  <section id="philosophy">
+    <h2 class="section-title">Our Philosophy</h2>
+    <div class="column">
+      <div class="box">
+        <h3>Visual Storytelling</h3>
+        <p>We believe your story deserves to be captured like a film — timeless, powerful, and emotional. Every shoot is a crafted journey through light, texture, and expression.</p>
+      </div>
+      <div class="box">
+        <h3>Luxury Aesthetic</h3>
+        <p>Inspired by fashion editorials, cinema masterpieces, and the elegance of the world’s top visual artists — we translate everyday moments into premium visual legacies.</p>
+      </div>
+      <div class="box">
+        <h3>Global-Class Craftsmanship</h3>
+        <p>From Paris to Tokyo, Milan to Jakarta — we bring an international standard to every frame. Gear, crew, and post-production are all set to global standards.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2 class="section-title">Visual Gallery</h2>
+    <div class="gallery">
+      <img src="https://i.pinimg.com/736x/cf/43/e8/cf43e833a68276b2fdf2e29cb7d7cc86.jpg" alt="Architecture" />
+      <img src="https://i.pinimg.com/736x/19/de/cb/19decbbcf65a3f8fb16c79b2c0d443fc.jpg" alt="Interior" />
+      <img src="https://i.pinimg.com/736x/29/4a/56/294a5668a75b99615f354683d5d97461.jpg" alt="Portrait" />
+      <img src="https://i.pinimg.com/736x/70/65/ae/7065ae684f328f87ac1ee956f7be8072.jpg" alt="Luxury" />
+      <img src="https://i.pinimg.com/736x/ef/9f/98/ef9f987bf371fb310d18b7bfdab09be1.jpg" alt="Storytelling" />
+      <img src="https://i.pinimg.com/736x/3b/86/29/3b8629b2b10371cd5e671face58e565b.jpg" alt="Still Life" />
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <h2 class="section-title">What We Offer</h2>
+    <ul>
+      <li>Signature Fine-Art Photography dengan sentuhan fashion editorial</li>
+      <li>Cinematic Video Production: dari wedding sampai personal branding</li>
+      <li>Drone Footage & Motion Capture berkualitas internasional</li>
+      <li>Exclusive lighting technique untuk nuansa luxury & dreamy</li>
+      <li>Fast-turnaround editing dengan tone sinematik global</li>
+      <li>Premium digital & physical albums dengan layout eksklusif</li>
+      <li>Consultation & creative direction sebelum sesi</li>
+    </ul>
+  </section>
+
+  <section class="cta" id="contact">
+    <div class="overlay">
+      <h2>Experience Cinematic Luxury</h2>
+      <p>Gue ngerti banget rasanya pengin punya momen yang nggak cuma "bagus", tapi juga punya feel kayak film festival vibes. Kita nggak main-main. Hasil kerja kita bukan cuma untuk dilihat — tapi buat dirasain. Lo bakal ngerasa kayak lo lagi jadi aktor utama dalam cerita hidup lo sendiri.</p>
+      <p>Mau itu prewed elegan, video dokumenter personal, fashion reel, atau wedding cinematic dengan standar internasional — tim kita all-in buat deliver experience yang nggak bisa lo lupain. Serius deh, ini bukan sekadar dokumentasi — ini warisan visual.</p>
+      <p>Jadi, kalau lo ngerasa visual storytelling lo pantas dapet perlakuan kelas dunia... you know what to do.</p>
+      <button onclick="window.location.href='https://wa.me/6282298987879'">Book Sekarang, Beb</button>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Timeless Photography & Cinematics. All rights reserved. <br />
+    Crafted with class. Delivered with soul.
+  </footer>
+</body>
+
+</html>
